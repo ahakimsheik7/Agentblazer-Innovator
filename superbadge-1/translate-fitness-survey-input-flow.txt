@@ -1,0 +1,34 @@
+Flow Name: Translate Fitness Survey Input
+Type: Record-Triggered Flow
+Trigger: When a Fitness__c record is Created
+Optimize For: Actions and Related Records
+
+Elements (exact order):
+1) Get Account (Get Records)
+   - Object: Account
+   - Filter: Id = {!$Record.AccountId}
+   - Store: Only the first record, Automatically store all fields
+
+2) Get Contact (Get Records)
+   - Object: Contact
+   - Filter: Id = {!$Record.ContactId}
+   - Store: Only the first record, Automatically store all fields
+
+3) Translate Survey Input (Action → Prompt Template)
+   - Action: Translate Survey Input (the Flex template)
+   - Store output automatically: Checked
+   - Inputs:
+       Account  = {!Get_Account}
+       Contact  = {!Get_Contact}
+       Fitness  = {!$Record}
+
+4) Update Translated Survey Input (Update Records)
+   - Record to Update: Use the record that triggered the flow → {!$Record}
+   - Field: Translated_Survey_Input__c
+   - Value: {!Translate_Survey_Input.promptResponse}
+
+Connections:
+Start → Get Account → Get Contact → Translate Survey Input → Update Translated Survey Input → End
+
+Activation:
+- Save, then Activate the flow.
