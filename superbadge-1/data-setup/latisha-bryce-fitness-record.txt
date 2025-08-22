@@ -1,0 +1,19 @@
+Goal: Provide the validator a Fitness record linked to Latisha Bryce with required fields.
+
+---
+
+### Steps:
+1) App Launcher → Contacts → search “Latisha Bryce” → open contact.
+2) Related tab → Fitness (or Fitness Records) → New.
+3) Fill:
+   - **Contact**: Latisha Bryce (lookup)
+   - **Survey Input**: Ho sempre desiderato correre una maratona.
+   - **Interest Type**: Running
+4) Save the record.
+5) Open the record and confirm the field **Translated Survey Input** will populate after the flow runs.
+
+---
+
+### Notes:
+- If the Fitness related list isn’t visible, add it to the Contact page layout.
+- Make sure **Survey Input** is not blank and **Interest Type** uses the exact picklist value “Running”.
