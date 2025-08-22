@@ -1,0 +1,8 @@
+[ ] Einstein Generative AI enabled; user language = English; caching option deselected in Session Settings.  
+[ ] Flex Prompt Template named “Translate Survey Input” exists with resources Account, Contact, Fitness.  
+[ ] Prompt Text uses inserted merge field for Survey Input in BOTH places (Insert Resource → Fitness → Survey Input).  
+[ ] Flow “Translate Fitness Survey Input” is active and elements are in order.  
+[ ] Action inputs mapped: Account = Get_Account, Contact = Get_Contact, Fitness = $Record.  
+[ ] Update writes Translate_Survey_Input.promptResponse → Translated_Survey_Input__c on $Record.  
+[ ] A Fitness record exists for Latisha Bryce with Survey Input “Ho sempre desiderato correre una maratona.” and Interest Type “Running”.  
+[ ] Preview of template returns a short English translation; saving a new Fitness record populates Translated Survey Input.
