@@ -1,0 +1,28 @@
+# Challenge 3 — Add Standard Topics: General FAQ and Escalation
+
+Goal: Configure the Coral Cloud Experience Agent to deliver precise answers from trusted data and escalate complex cases.
+
+Steps:
+- Created/verified Prompt Template: **Film_Festival_Related_Answers**
+  • Input field: Question (text)
+  • Prompt text includes {Question} placeholder
+  • Retrievers: Knowledge Articles + Code of Conduct file
+  • Query for both retrievers set to {Question}
+  • Template activated
+
+- Created Action: **Answer Festival Question**
+  • Invokes Film_Festival_Related_Answers prompt template
+  • Input mapping: Question → {userMessage}
+
+- Overrode the General FAQ Topic:
+  • Removed duplicates to avoid topic overlap
+  • Configured it to call the new action
+  • Ensured responses use retrievers only
+
+- Added Escalation Topic:
+  • Configured to transfer unresolved questions to service representative
+  • Linked to outbound routing flow (ESA – Route to Queue)
+
+- Tested:
+  • Festival-related question → Answered from Knowledge + File sources
+  • Unrelated/complex question → Escalated properly
