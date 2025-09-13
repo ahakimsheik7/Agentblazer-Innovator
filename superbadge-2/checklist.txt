@@ -1,0 +1,13 @@
+# Challenge 1 Checklist
+
+[ ] Turn on Einstein
+[ ] Turn on Agentforce
+[ ] Confirm Coral Cloud Experience Agent exists
+[ ] Set Description field exactly as provided
+[ ] Set Role field exactly as provided
+[ ] Set Company context exactly as provided
+[ ] Create Knowledge Data Library (Title, Summary, Question, Answer)
+[ ] Upload Code of Conduct to File Data Library (keep original filename)
+[ ] Link both libraries to the Coral Cloud Experience Agent
+[ ] Rebuild Knowledge search index
+[ ] Validate and confirm challenge passes
