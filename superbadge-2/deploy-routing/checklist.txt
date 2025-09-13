@@ -1,0 +1,12 @@
+# Challenge 4 Checklist — Deploy & Routing
+
+[ ] Coral Cloud Experience Agent is Activated
+[ ] Opened inbound flow "Route to ESA", saved, and Activated
+[ ] Opened outbound flow "ESA - Route to Queue", saved, and Activated
+[ ] Escalation topic is linked to outbound routing in agent configuration
+[ ] ESA Web Deployment is Published
+[ ] coral-cloud Experience site is Published
+[ ] Embedded Messaging component present on site and linked to ESA deployment
+[ ] Live test: guest → agent works
+[ ] Live test: agent escalation → Messaging queue works
+[ ] Validated in Trailhead
