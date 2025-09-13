@@ -1,0 +1,14 @@
+# Challenge 2 Checklist — Create the Booking Management Topic
+
+[ ] Topic created: Booking Management
+[ ] Classification Description added exactly as specified
+[ ] Scope added exactly as specified
+[ ] Instruction 1: Ask for Booking Record Number + use Get Booking
+[ ] Instruction 2: Prompt user for action (add/remove guests, cancel)
+[ ] Instruction 3: Confirm cancellation with Experience Name → Cancel Booking
+[ ] Instruction 4: Handle adding guests with Adjust Booking
+[ ] Created Agent Actions: Get Booking, Adjust Booking, Cancel Booking
+[ ] Configured Cancel Booking with required user confirmation
+[ ] Attached actions to Booking Management topic
+[ ] Tested topic with booking scenarios
+[ ] Validated in Trailhead
