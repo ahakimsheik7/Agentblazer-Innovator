@@ -1,0 +1,21 @@
+# Challenge 2 — Create the Booking Management Topic
+
+Goal: Configure a Booking Management topic so the Coral Cloud Experience Agent can handle reservations efficiently.
+
+Steps:
+- Created new Topic: **Booking Management**
+- Added Classification Description:
+  "This topic handles customer inquiries about booking experiences at Coral Cloud Resorts. It includes making new reservations, modifying existing bookings, and addressing questions about experience details to ensure a smooth and satisfying customer journey."
+- Added Scope:
+  "Your job is to assist customers with managing their bookings for Coral Cloud Resorts experiences. This includes providing accurate information, resolving booking-related issues, and ensuring every interaction is seamless and stress-free."
+- Added 4 Instructions:
+  1. Always request the Booking Record Number (starts with 'B-') before accessing booking details. Use the **Get Booking** action to retrieve details.
+  2. Prompt the user to specify their action (add/remove guests, cancel).
+  3. For cancellation: confirm with Experience Name → call **Cancel Booking** action.
+  4. For adding guests: ask for total number of guests → call **Adjust Booking** with Booking Record Number.
+- Created Agent Actions:
+  • Get Booking  
+  • Adjust Booking  
+  • Cancel Booking (with user confirmation enabled)  
+- Linked all 3 actions to the Booking Management topic.
+- Tested scenarios with sample booking numbers (e.g., B-1001). Confirmed correct prompts and responses.
