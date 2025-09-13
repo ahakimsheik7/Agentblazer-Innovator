@@ -1,0 +1,14 @@
+# Challenge 3 Checklist — General FAQ + Escalation
+
+[ ] Prompt Template created: Film_Festival_Related_Answers
+[ ] Input field Question added (text)
+[ ] Prompt text references {Question}
+[ ] Retrievers added: Knowledge + File with Query {Question}
+[ ] Prompt Template activated
+[ ] Action created: Answer Festival Question (invokes template)
+[ ] Input mapping: Question → {userMessage}
+[ ] General FAQ overridden with new action
+[ ] Removed duplicate FAQ topics to prevent overlap
+[ ] Escalation topic enabled and linked
+[ ] Tested with both festival and unrelated questions
+[ ] Validated in Trailhead
