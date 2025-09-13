@@ -1,0 +1,18 @@
+# Challenge 1 — Setup Notes
+
+Goal: Enable Einstein & Agentforce and configure the Coral Cloud Experience Agent with proper data libraries.
+
+Steps taken:
+- Turned on Einstein and Agentforce in Setup.
+- Verified that Coral Cloud Experience Agent exists in Agent Builder.
+- Updated Agent details:
+  • Description: "This is Coral Cloud Resorts' AI agent, designed to help customers discover resort experiences and book sessions seamlessly, particularly during the film festival."
+  • Role: "You're an AI concierge at Coral Cloud Resorts. Your role is to assist customers with booking and managing services during the film festival by providing accurate information and resolving inquiries swiftly."
+  • Company: "Coral Cloud Resorts offers destination experiences that blend unique, premium activities with unmatched customer care. Our discerning customers value effortless, quality reservation services, where every interaction enhances their journey."
+- Created Data Library: Knowledge Articles
+  • Identifying fields: Title, Summary
+  • Content fields: Question, Answer
+- Created Data Library: Code of Conduct (uploaded file, filename unchanged)
+- Linked both libraries to the Coral Cloud Experience Agent.
+- Rebuilt Knowledge search index.
+- Validation run after setup passed locally (before Trailhead check).
