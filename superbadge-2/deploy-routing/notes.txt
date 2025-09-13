@@ -1,0 +1,30 @@
+# Challenge 4 — Deploy Agent and Transfer Conversations
+
+Goal: Make the Coral Cloud Experience Agent available on the coral-cloud Experience site and ensure conversations can route to/from the agent and a service queue.
+
+What I configured:
+
+1) Agent Activation
+- Confirmed Coral Cloud Experience Agent is ACTIVE with latest configs from prior challenges.
+
+2) Inbound Routing (site → ESA)
+- Opened flow: Route to ESA (Inbound Omnichannel)
+- Verified logic, then Saved and Activated.
+
+3) Outbound Routing (ESA → Queue escalation)
+- Opened flow: ESA - Route to Queue (Outbound Omnichannel)
+- Verified logic: send escalations to Messaging queue, optional transfer message to guest
+- Saved and Activated.
+
+4) Experience Cloud + Embedded Messaging
+- Ensured ESA Web Deployment is Published.
+- Ensured coral-cloud site is Published.
+- (If not already) Added Embedded Messaging component to the site and selected the ESA web deployment.
+
+5) End-to-End Test
+- Started a guest chat on the site → conversation routed to Coral Cloud Experience Agent.
+- Triggered an escalation from the agent → conversation transferred to Messaging queue.
+
+Notes:
+- Trailhead doesn’t check the publish steps, but they’re critical for testing.
+- Keep topic override (General FAQ) and Escalation topic enabled from Challenge 3.
